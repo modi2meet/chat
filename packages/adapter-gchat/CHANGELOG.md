@@ -1,5 +1,14 @@
 # @chat-adapter/gchat
 
+## 4.30.0
+
+### Patch Changes
+
+- 177735a: - Fix redundant mailto link rendering in Google Chat adapter
+  - Google Chat adapter was emitting redundant `<mailto:...|...>` tokens when rendering autolinked email addresses. This change collapses `mailto:` URLs when the visible text equals the email address, ensuring cleaner output consistent with plain text rendering in Google Chat.
+  - chat@4.30.0
+  - @chat-adapter/shared@4.30.0
+
 ## 4.29.0
 
 ### Minor Changes
